@@ -32,6 +32,7 @@ int main()
 {
 	int n;
 	int m;
+	printf("请输入第几个数:");
 	scanf("%d",&n);
 	
 	printf("%d",nthu(n));
