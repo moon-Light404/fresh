@@ -17,5 +17,6 @@ int main(){
 	break;	
 }
 	cout<<s.size()<<endl;
+	cout<<"这是测试从github网站上测试再到文件中验证"<<endl;
 	return 0;
 } 
