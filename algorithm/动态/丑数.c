@@ -9,8 +9,7 @@ int min(int a,int b,int c)
 }
 int nthu(int n)
 {
-	int dp[n];            /* 输入一个数n，找到第n个丑数，丑数只能是
-	                        2，3，5的倍数，规定1是最小的丑数*/ 
+	int dp[n];            /* 输入一个数n，找到第n个丑数，丑数只能是	                        2，3，5的倍数，规定1是最小的丑数*/ 
 	int i;
 	int l2=0;
 	int l3=0;

@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+
+#include<iostream>
 using namespace std;
 int ans=0,sum=0,x[25];
 int n,k;
