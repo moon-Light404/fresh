@@ -12,7 +12,7 @@ int ans;
 
 bool check(int a, int c) {
 	long long b = n * (long long)c - a * c;
-
+	cout << "现在 a b c 的值分别为" << a << ' ' << c << ' ' << b << ' ' << endl;
 	if (!a || !b || !c)
 		return false;
 

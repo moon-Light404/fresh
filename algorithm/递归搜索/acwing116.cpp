@@ -179,9 +179,6 @@ void dfs(int x, int y) {
 }
 
 
-
-
-
 int main() {
 	for (int i = 0; i < 4; i++)
 		cin >> g[i];
