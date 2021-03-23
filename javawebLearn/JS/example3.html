@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    请输入你的分数:
+    <input type = "text" value = "" id = "textid" class = "tetxClass" name = "textName">
+    <p id = "demo"></p>
+    <button type = "button" onclick="myFunction()">submit</button>
+    <script>
+        function myFunction()
+        {
+            var x;
+            var ve = document.getElementById("textid");
+            x = parseInt(ve);
+            if(x < 60)
+            {
+                document.getElementById("demo").innerHTML = "不及格!";
+            }
+            
+            else if(60 <= x  <= 70)
+            {
+                document.getElementById("demo").innerHTML = "中等水平";
+            }
+        
+            else if(70 < x <= 80)
+            {
+                document.getElementById("demo").innerHTML = "良好";
+            }
+            
+            else if(80 < x <= 90)
+            {
+                document.getElementById("demo").innerHTML = "优秀";
+            }
+           
+            else if(90 < x <= 100)
+            {
+                document.getElementById("demo").innerHTML = "非常好,超越了大部分人";
+            }
+         
+            
+        }
+       
+
+    </script>
+</body>
+</html>

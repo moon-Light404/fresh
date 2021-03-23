@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    "\\P1036选树"
+    "",
+    "\\P1036选树",
+    "\\P1605迷宫",
+    "\\八皇后1219",
+    "\\奇怪的电梯",
+    "\\测试集合"
   ],
+  "SelectedNode": "\\奇怪的电梯\\1135奇怪的电梯.cpp",
   "PreviewInSolutionExplorer": false
 }
