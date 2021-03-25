@@ -1,27 +1,27 @@
 #include "slinklist.h"
-
+//ä¸ä¿Šå¤§ä½¬
 linklist insert(linklist head, datatype x) {
-	linklist p, q, pre; // qÊÇÒª²åÈëµÄ½Úµã
+	linklist p, q, pre; // qæ˜¯è¦æ’å…¥çš„èŠ‚ç‚¹
 	q = (linklist)malloc(sizeof(node));
 	q->info = x;
 	p = head;
-	// ²åÈëÍ·½Úµã
+	// æ’å…¥å¤´èŠ‚ç‚¹
 	if (p->info >= x) {
 		head = q;
 		q->next = p;
 		return head;
 	}
 	pre = p, p = p->next;
-	while (p && x >= p->info) { // ÕÒµ½µÚÒ»¸ö´óÓÚµÈÓÚµÄÊı
+	while (p && x >= p->info) { // æ‰¾åˆ°ç¬¬ä¸€ä¸ªå¤§äºç­‰äºçš„æ•°
 		pre = p;
 		p = p->next;
 	}
-	// ²åÈëÖĞ¼ä,²åÈëµ½pºóÃæ
+	// æ’å…¥ä¸­é—´,æ’å…¥åˆ°påé¢
 	if (pre->next) {
 		q->next = pre->next;
 		pre->next = q;
 	}
-	// ×îºóÒ»¸öµã
+	// æœ€åä¸€ä¸ªç‚¹
 	else if (pre->next == NULL) {
 		pre->next = q;
 		q->next = NULL;
@@ -32,10 +32,10 @@ linklist insert(linklist head, datatype x) {
 int main() {
 	datatype x;
 	linklist head;
-	printf("ÊäÈëÒ»×éÉıĞòÅÅÁĞµÄÕûÊı: \n");
+	printf("è¾“å…¥ä¸€ç»„å‡åºæ’åˆ—çš„æ•´æ•°: \n");
 	head = creatbyqueue();
 	print(head);
-	printf("ÇëÊäÈëÒª²åÈëµÄÖµ:");
+	printf("è¯·è¾“å…¥è¦æ’å…¥çš„å€¼:");
 	scanf("%d", &x);
 	head = insert(head, x);
 	print(head);
