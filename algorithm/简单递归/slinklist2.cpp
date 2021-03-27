@@ -4,16 +4,21 @@ linklist delallx(linklist head, int x) {
 	linklist p = head, p2 = head;
 	while (p != NULL) {
 		if (p->info == x) {
-			p2->next = p->next;
-			free(p);
-			p = p2;
+			if (p == head)
+				head = p->next;
+			else {
+				p2->next = p->next;
+				free(p);
+				p = p2;
+			}
 		}
-		p2 = p;
+		p2 = p; // Ç°Çı½Úµã
 		p = p->next;
-
 	}
 	return head;
 }
+
+
 
 int main() {
 	datatype x;
