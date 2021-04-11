@@ -5,47 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    请输入你的分数:
-    <input type = "text" value = "" id = "textid" class = "tetxClass" name = "textName">
-    <p id = "demo"></p>
-    <button type = "button" onclick="myFunction()">submit</button>
     <script>
         function myFunction()
         {
             var x;
-            var ve = document.getElementById("textid");
+            var ve = document.getElementById("textid").value;
             x = parseInt(ve);
             if(x < 60)
             {
-                document.getElementById("demo").innerHTML = "不及格!";
+                alert("不及格");
             }
             
-            else if(60 <= x  <= 70)
+            else if( x  <= 70 && x > 60)
             {
-                document.getElementById("demo").innerHTML = "中等水平";
+                alert("中等水平");
             }
         
-            else if(70 < x <= 80)
+            else if(x <= 80 && x > 70)
             {
-                document.getElementById("demo").innerHTML = "良好";
+                alert("良好");
             }
             
-            else if(80 < x <= 90)
+            else if(x <= 90 && x > 80)
             {
-                document.getElementById("demo").innerHTML = "优秀";
+                alert("优秀");
             }
            
-            else if(90 < x <= 100)
+            else if(x <= 100 && x > 90)
             {
-                document.getElementById("demo").innerHTML = "非常好,超越了大部分人";
+                alert("非常好，超越了大部分人");
             }
          
             
         }
-       
-
+    
     </script>
 </body>
+</head>
+<body>
+    请输入你的分数:
+    <input type = "text" value = "" id = "textid" class = "tetxClass" name = "textName">
+    <button type = "button" onclick="myFunction()">submit</button>
+    
 </html>

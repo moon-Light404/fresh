@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function TwoFunction()
+        {
+            var score;
+            var ve = document.getElementById("textid").value;
+            score = parseInt(ve);
+            score = score/10;
+            switch(score)
+            {
+                case 10:
+                    alert("优秀");
+                    break;
+                case 9:
+                    alert("优秀");
+                    break;
+                case 8:
+                    alert("良好");
+                    break;
+                case 7:
+                    alert("良好");
+                    break;
+                case 6:
+                    alert("及格");
+                    break;
+                default:
+                    alert("不及格");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    请输入你的分数:
+    <input type = "text" value = "" id = "textid" class = "tetxClass" name = "textName">
+    <button type = "button" onclick="TwoFunction()">submit</button>
+</body>
+</html>

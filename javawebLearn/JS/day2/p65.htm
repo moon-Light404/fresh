@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单显示</title>
+    <script language = "javascript">
+        function show(menu)
+        {
+            document.getElementById(menu).style.visibility = "visible";
+        }
+
+        function hide()
+        {
+            document.getElementById("menu1").style.visibility = "hidden";
+            document.getElementById("menu2").style.visibility = "hidden";
+            document.getElementById("menu3").style.visibility = "hidden";
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr bgcolor = "#9999FF">
+            <td width = "80" onmousemove="show('menu1')" onmouseout="hide()">菜单一</td>
+            <td width = "80" onmousemove="show('menu2')" onmouseout="hide()">菜单二</td>
+            <td width = "80" onmousemove="show(menu3)" onmouseout="hide()">菜单三</td>
+        </tr>
+    </table>
+    <div id = "menu1" onmousemove="show('menu1')" onmouseout="hide()" style = "background:#9999FF;position:absoulte;left=12;top=38;
+    width=80;visibility=hidden">
+    <span>子菜单一</span> <br>
+    <span>子菜单二</span> <br>
+    <span>子菜单三</span> <br>
+
+    </div>
+</body>
+</html>

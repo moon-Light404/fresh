@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <tite>
+            三种常用的对话框
+        </tite>
+        <script type = "text/javascript">
+            function alterDialog(){
+                alert("您成功执行了这个操作");
+            }
+            function confirDialog()
+            {
+                if(window.confirm("您确认要进行这个操作吗?"))
+                    alert("您选择了确定");
+                else
+                    alert("您选择了取消");
+            }
+            function promptDialog()
+            {
+                var input = window.prompt("请输入内容");
+                if(input != null){
+                    window.alert("您输入的内容为"+input);
+                }
+                   
+            }
+        </script>
+    </head>
+</head>
+<body>
+    <form>
+        <input type = "button" value = "警告对话" onclick = "alterDialog()">
+        <input type = "button" value = "确认对话" onclick = "confirDialog()">
+        <input type = "button" value = "输入对话" onclick = "promptDialog()">
+
+    </form>
+</body>
+</html>

@@ -26,7 +26,7 @@
 //	}
 //} 
 
-//寒假作业
+// 寒假作业
 #include<iostream>
 #include<algorithm>
 #include<cmath>
