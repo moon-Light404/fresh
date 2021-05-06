@@ -61,20 +61,21 @@
         function ChangeCity()
         {
             var i,ProvinceIndex;
-            ProvinceIndex = document.frm.optProvince.selectedIndex;
+            ProvinceIndex = document.frm.optProvince.selectedIndex; // 求出现在选的城市的序号
             CityCount = 0;
             while(aCity[ProvinceIndex][CityCount] != null)
             {
-                CityCount++;
+                CityCount++; // 把数组中对应序号的城市数求出来
             }
             document.frm.optCity.length = CityCount;
             for(i = 0; i <= CityCount-1;i++)
             document.frm.optCity[i] = new Option(aCity[ProvinceIndex][i]);
-            document.frm.optCity.focus();
+            document.frm.optCity.focus(); 
+            // focus()主要是用于获取焦点，说白了，就是自动把光标放到此组件上面，无须用户再次操作。
         }
     </script>
 </head>
-<body onfocus="ChangeCity()">
+<body onfocus="ChangeCity()"> <!--onfocus 事件在对象获得焦点时发生-->
     <h3>选择省份和城市</h3>
     <form name = "frm">
         <p>省份: <select name = "optProvince" size = "1" onchange="ChangeCity()">
@@ -89,7 +90,7 @@
 
         </p>
         <p>城市:
-            <select name = "optCity" size = "1">
+            <select name = "optCity" size = "1"> <!--name表示下拉列表的名称-->
                 <option>--请选择--</option>
             </select>
         </p>
