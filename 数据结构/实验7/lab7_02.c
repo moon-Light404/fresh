@@ -26,9 +26,9 @@ int main() {
 	t = creatbintree();
 	printf("二叉树的层次序列为:\n");
 	levelbintree(t);
-	preorder(t);
-	puts("");
-	postorder(t);
+//	preorder(t);
+//	puts("");
+//	postorder(t);
 	return 0;
 
 }
