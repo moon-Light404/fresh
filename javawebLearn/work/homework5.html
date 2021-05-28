@@ -7,66 +7,74 @@
     <title>学生注册</title>
     <script type = "text/javascript" src ="../JS/checke5.js"></script>
     <style>
-        div{
+        .main {
+            width: 100%;
+            margin-top: 200px;
+        }
+        #localtime {
             width:300px;
             height:30px;
             margin: 0 auto;
+            color: red;
             }
     </style>
  
 </head>
 <body>
-    <form action=""method = "">
-        <table border = "26" align = "center" >
-            <caption>用户注册</caption>
-            <tr align = "center">
-                <td colspan = "2">
-                    <span id = "tips">欢迎注册用户!</span>
-                </td>
-            </tr>
-            <tr>
-                <td algin = "center">
-                    姓名:
-                </td>
-                <td>
-                    <input type = "text" name = "username" id = "username" class = "input_class" />
-                </td>
-
-            </tr>
-            <tr>
-                <td algin = "center">
-                    密码:
-                </td>
-                <td>
-                    <input type = "password" name = "password" id = "password" class = "input_class" />
-                    
-                </td>
-            </tr>
-            <tr>
-                <td algin = "center">
-                    密码确认:
-                </td>
-                <td>
-                    <input type = "passwprd" name = "repassword" id = "repassword" class = "input_class" />
-
-                </td>
-            </tr>
-            <tr>
-                <td aling = "center">
-                    Email:
-                </td>
-                <td>
-                    <input type = "text" name = "Email" id = "Email" class="input_class" />
-                </td>
-            </tr>
-            <tr align = "center">
-                <td colspan = "2">
-                    <button type ="button" onclick = "regist()">注册</button>
-                </td>
-            </tr>
-
-        </table>
-    </form>
+    <div class ="main">
+        <form action=""method = "">
+            <table border = "26" align = "center" >
+                <caption>用户注册</caption>
+                <tr align = "center">
+                    <td colspan = "2">
+                        <span id = "tips">欢迎注册用户!</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td algin = "center">
+                        姓名:
+                    </td>
+                    <td>
+                        <input type = "text" name = "username" id = "username" class = "input_class" />
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td algin = "center">
+                        密码:
+                    </td>
+                    <td>
+                        <input type = "password" name = "password" id = "password" class = "input_class" />
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td algin = "center">
+                        密码确认:
+                    </td>
+                    <td>
+                        <input type = "passwprd" name = "repassword" id = "repassword" class = "input_class" />
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td aling = "center">
+                        Email:
+                    </td>
+                    <td>
+                        <input type = "text" name = "Email" id = "Email" class="input_class" />
+                    </td>
+                </tr>
+                <tr align = "center">
+                    <td colspan = "2">
+                        <button type ="button" onclick = "regist()">注册</button>
+                    </td>
+                </tr>
+    
+            </table>
+        </form>
+    </div>
+   
 
     <div id = "localtime">当地时间</div>
 

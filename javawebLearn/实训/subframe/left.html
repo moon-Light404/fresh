@@ -5,16 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEFT</title>
+    <style>
+        
+        body {
+            background-image: url(../../image/Duola.jpg);
+            background-repeat: no-repeat;
+            background-size: 442px 652px;
+        }
+        a{
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .left li:first-child {
+            margin-top: 100px;
+        }
+        .left li {
+            display: block;
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            border: 2px solid #504e4b;
+            margin-bottom: 20px;
+            line-height: 50px;
+            font-size: 20px;
+        }
+    </style>
 </head>
-<body style = "background:url(../../image/Duola.jpg) no-repeat -50px -50px;">
+<body >
     <style>
         
     </style>
-    <ul>
-        <li style = "line-height:5 ;font-size : 20px" ><a href = "picture.html" target = "mainFrame"> 电子相册</a></li>
-        <li style = "line-height:5 ;font-size : 20px" ><a href = "person.html" target = "mainFrame"> 个人简介</a></li>
-        <li style = "line-height:5 ;font-size: 20px"><a href = "diary.html" target = "mainFrame">心情日志</a></li>
-        <li style = "line-height:5 ;font-size: 20px"><a href = "me.html" target = "mainFrame">与我联系</a></li>
+    <ul class = "left">
+        <li><a href = "picture.html" target = "mainFrame"> 电子相册</a></li>
+        <li><a href = "person.html" target = "mainFrame"> 个人简介</a></li>
+        <li><a href = "diary.html" target = "mainFrame">心情日志</a></li>
+        <li><a href = "me.html" target = "mainFrame">与我联系</a></li>
     </ul>
 </body>
 </html>
