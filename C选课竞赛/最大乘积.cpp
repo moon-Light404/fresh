@@ -50,3 +50,50 @@ int main() {
 
 	return 0;
 }
+
+
+
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+const int N = 20;
+char g[N][N];
+bool col[N]; // 该列是否被填过
+bool u1[N], u2[N]; // 记录对角线和反对角线
+int k; // k x K的方格
+void dfs(int n)
+{
+    if(n == k) // 搜了k行
+    {
+        for(int i = 0; i < k;i++)   cout << g[i]  << endl;
+        puts("");
+        return;
+    }
+    
+    for(int u = 0;u < k;u++) // 这里是搜索某一行的上的各列
+    {
+        if(!col[u] && !u1[u+n] && !u2[u-n+k-1]) // 对角线上的点的x，y坐标的性质
+        {
+           col[u] = true; // 标记该列
+           g[n][u] = 'Q';
+           u1[u+n] = true;
+           u2[u-n+k-1] = true;
+           dfs(n+1);
+           // 恢复现场
+           col[u] = false;
+           u1[u+n]  =false;
+           u2[u-n+k-1]=false;
+           g[n][u]='.';
+        }
+    }
+}
+int main()
+{
+    cin >> k;
+    for(int i = 0;i < k;i++)
+        for(int j = 0; j < k;j++)
+            g[i][j] = '.';
+    dfs(0); // 第一行开始
+    return 0;
+}
